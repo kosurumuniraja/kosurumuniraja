@@ -1,0 +1,47 @@
+
+Authenticating with public key "imported-openssh-key"
+Last login: Mon Jul  5 12:31:25 2021 from 157.47.5.22
+[ec2-user@1 ~]$ sudo -i
+[root@1 ~]# cd .ssh
+[root@1 .ssh]# ls
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+[root@1 .ssh]# cat authorized_keys
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please l                                                                                        ogin as the user \"ec2-user\" rather than the user \"root\".';echo;sleep 10;exit                                                                                         142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCQ+Jz7Sbk4P5iTrKHDC81P7TqGzXBFg1ohlI                                                                                        ZgROmNQDPwEQgKVyvk9+PGbFTRXLn6qUEffBVnpmjBTU/UTJrhvoLkrGkjMLxk91VLxVODAxviaxNa5E                                                                                        vhmzKbXu6uNgNz9fx9m2sCMjur+bJGwu/IZwRAm75bG4zhSkjYRusC985JweNQJRY/9X5Gh8FzdnetoE                                                                                        nllEova05aWfdsBLUwsvjAq+aBHPDSOg9p9CfUdE8fXw0z1jJCIwhBmIQJJv49wQ9CQhMo7D2H5/CRzf                                                                                        mOr/YIC6qvdqt7VHrrrE62w2IJDE7ZbweKxh5zzw1Rk87c6V4yLzm9b3wZtgksdBCN bbb
+[root@1 .ssh]# key
+-bash: key: command not found
+[root@1 .ssh]# ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+/root/.ssh/id_rsa already exists.
+Overwrite (y/n)?
+[root@1 .ssh]# ls
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+[root@1 .ssh]# cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDYjLZ2CcF5O81B0PiYAvR32SP3qQCyl8D18p30m8PP                                                                                        5f/tJJPdYPVHRUxmhOT/lwIbIJ5XG/Xn2TB8qdfEnjaB/pnzPitIn2y3+wrXzZ0j4yx/G8vmNYao0FyS                                                                                        aOnjd3syGzCIlPyLv3YjF0RHbdtb9OaIGddsmai+R6FBYTQjZ/4vjb0oeuXflvRiJtlicDjK7xX1n3KP                                                                                        9A5H40bpZxi8r5V3LofmewxJ7nECszXx1Zwf16TIn9aTHbP7pHfJ2kZMKouXCjHLCD/vdfpfAoqZx4sM                                                                                        ZjAh/WjuwBteOPANqhAqQ5o6bJiUXvnQvvnBYkMS1blAtmgyOCTqAtMbQd/p2JzI8xbKp9y0/ggOv2cC                                                                                        y94/Zg9682UA0D2p5T4Mbk4Y29Ym1w3Vh2jYLm1dGWlhmCG/zin6rhVl/6JrW6Zo1MWr48NQfriOY9lq                                                                                        WdzGFUDwM9lXxL9yahRngOHz8Xyy1IEJ8quyNJTRO2+9BQ36T2gF0mEityA00e1JzNkeKP8= root@1
+[root@1 .ssh]# ^C
+[root@1 .ssh]# ssh 3.6.88.3
+Last login: Mon Jul  5 12:57:26 2021 from 13.235.27.63
+[root@2 ~]# cd .ssh
+[root@2 .ssh]# ls
+authorized_keys  mmm  muni.txt  raja.txt
+[root@2 .ssh]#
+
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Mon Jul  5 12:34:29 2021 from 157.47.5.22
+[ec2-user@2 ~]$ sudo -i
+[root@2 ~]# cd .ssh
+[root@2 .ssh]# ls
+authorized_keys  mmm  muni.txt
+[root@2 .ssh]# vi authorized_keys
+[root@2 .ssh]# ls
+authorized_keys  mmm  muni.txt
+[root@2 .ssh]# raja.txt
+-bash: raja.txt: command not found
+[root@2 .ssh]# touch raja.txt
+[root@2 .ssh]#
+
+
+
+
+
