@@ -1,0 +1,1900 @@
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Wed Jul  7 06:43:08 2021 from 157.47.10.39
+[ec2-user@ip-172-31-13-193 ~]$ sudo -i
+[root@ip-172-31-13-193 ~]# cd /opt
+[root@ip-172-31-13-193 opt]# git clone https://github.com/wakaleo/game-of-life.git
+Cloning into 'game-of-life'...
+remote: Enumerating objects: 9222, done.
+remote: Total 9222 (delta 0), reused 0 (delta 0), pack-reused 9222
+Receiving objects: 100% (9222/9222), 17.57 MiB | 18.29 MiB/s, done.
+Resolving deltas: 100% (5619/5619), done.
+[root@ip-172-31-13-193 opt]# mvn clean install
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.086 s
+[INFO] Finished at: 2021-07-08T02:14:40Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/opt). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[root@ip-172-31-13-193 opt]# cd game-of-life/
+[root@ip-172-31-13-193 game-of-life]# mvn clean install
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMi
+Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMin
+Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml
+Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-httpclien
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-httpclient
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/com
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/comm
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackra
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrab
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackra
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrab
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackra
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrab
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackra
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrab
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-ap
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-p
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-pa
+Downloading from central: https://repo.maven.apache.org/maven2/commons-httpclien
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-httpclient
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.8.2
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.8.2/
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-ove
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMi
+Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackra
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackra
+Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMin
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-a
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/commons-httpclien
+Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/com
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrab
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-ap
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrab
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-httpclient
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for
+[WARNING] Reporting configuration should be done in <reporting> section, not in
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for
+[WARNING] Reporting configuration should be done in <reporting> section, not in
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for
+[WARNING] Reporting configuration should be done in <reporting> section, not in
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for
+[WARNING] Reporting configuration should be done in <reporting> section, not in
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten t
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support buildin
+[WARNING]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] gameoflife                                                         [pom]
+[INFO] gameoflife-build                                                   [jar]
+[INFO] gameoflife-core                                                    [jar]
+[INFO] gameoflife-web                                                     [war]
+[INFO]
+[INFO] -----------------< com.wakaleo.gameoflife:gameoflife >------------------
+[INFO] Building gameoflife 1.0-SNAPSHOT                                   [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/maven-e
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/maven-ea
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-m
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-ma
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/maven-e
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/maven-ea
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/e
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco- kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.ja
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jac
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/jacoco- kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/j
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamc
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcr
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamc
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcr
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamc
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcr
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mocki
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockit
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamc
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamc
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mocki
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcr
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/j
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcr
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockit
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/e
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/e
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s 19 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s7 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexuat 31 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/beanshell/bsh
+Downloaded from central: https://repo.maven.apache.org/maven2/org/beanshell/bsh/
+Downloading from central: https://repo.maven.apache.org/maven2/org/beanshell/bea
+Downloaded from central: https://repo.maven.apache.org/maven2/org/beanshell/bean
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/e
+Downloading from central: https://repo.maven.apache.org/maven2/org/beanshell/bsh
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/e
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s66 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloaded from central: https://repo.maven.apache.org/maven2/org/beanshell/bsh/
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initiali
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/ws)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl
+Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/
+Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis
+Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexuB at 13 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/veloci
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocit
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+Downloading from central: https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro
+Downloaded from central: https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro-
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/commons-validator
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-validator/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/commons-digester/
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-digester/c
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis
+Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/
+Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis
+Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.ja
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jac
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.ja
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jac
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-d
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-de
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-p
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-pa
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/o
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.3/ow
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.ja
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jac/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.8.2
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.8.2/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/w)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/veloci
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloading from central: https://repo.maven.apache.org/maven2/commons-validator
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/commons-digester/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/velocit
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-validator/
+Downloading from central: https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.ja
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-digester/c
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.ja
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-d
+Downloaded from central: https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro-
+Downloading from central: https://repo.maven.apache.org/maven2/org/jacoco/org.ja
+Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jac195 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jac
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jacoco/org.jacs)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-de
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agenof-life/target/jacoco.exec
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+[INFO] No tests to run.
+[INFO] Surefire report directory: /opt/game-of-life/target/surefire-reports
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/ant/ant/1.6.5/ant
+Downloaded from central: https://repo.maven.apache.org/maven2/ant/ant/1.6.5/ant-
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-m
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-ma
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-p
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-pa
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-as
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-as
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-m
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-ma
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.11/
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.11/j
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-c
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-co
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.11/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easyb/easyb-as
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.11/j
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+[INFO] /opt/game-of-life/src/test/stories does not exists.  Skipping easyb testi
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (integration-tests) @ gameoflife ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /opt/game-of-life/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (jacoco-site) @ gameofl
+[INFO] Skipping JaCoCo execution due to missing classes directory:/opt/game-of-l
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gameoflife ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+[INFO] Installing /opt/game-of-life/pom.xml to /root/.m2/repository/com/wakaleo/
+[INFO]
+[INFO] --------------< com.wakaleo.gameoflife:gameoflife-build >---------------
+[INFO] Building gameoflife-build 1.0-SNAPSHOT                             [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife-build ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-bui
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initiali
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agenof-life/gameoflife-build/target/jacoco.exec
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-buil
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ga
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /opt/game-of-life/gameoflife-build/sr
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gameofl
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ gameoflife-build ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife-build ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /opt/game-of-life/gameoflife-build/target/sure
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife-build ---
+[INFO] /opt/game-of-life/gameoflife-build/src/test/stories does not exists.  Ski
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gameoflife-build ---
+Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/comm
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commo
+[INFO] Building jar: /opt/game-of-life/gameoflife-build/target/gameoflife-build-
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (integration-tests) @ gameoflife-buil
+[INFO] No tests to run.
+[INFO] Surefire report directory: /opt/game-of-life/gameoflife-build/target/sure
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (jacoco-site) @ gameofl
+[INFO] Analyzed bundle 'gameoflife-build' with 0 classes
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gameoflife-build
+[INFO] Installing /opt/game-of-life/gameoflife-build/target/gameoflife-build-1.0OT/gameoflife-build-1.0-SNAPSHOT.jar
+[INFO] Installing /opt/game-of-life/gameoflife-build/pom.xml to /root/.m2/reposipom
+[INFO]
+[INFO] ---------------< com.wakaleo.gameoflife:gameoflife-core >---------------
+[INFO] Building gameoflife-core 1.0-SNAPSHOT                              [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife-core ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-cor
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /opt/game-of-life/gameoflife-core/src
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initiali
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agenof-life/gameoflife-core/target/jacoco.exec
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-core
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /opt/game-of-life/gameoflife-core/target/clas
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ga
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /opt/game-of-life/gameoflife-core/src
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gameofl
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /opt/game-of-life/gameoflife-core/target/tes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ gameoflife-core ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife-core ---
+[INFO] Surefire report directory: /opt/game-of-life/gameoflife-core/target/suref
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.wakaleo.gameoflife.domain.WhenYouPrintAGrid
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 sec
+Running com.wakaleo.gameoflife.domain.WhenYouReadAGridFromAString
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.wakaleo.gameoflife.domain.WhenYouCreateAGrid
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running com.wakaleo.gameoflife.domain.WhenYouCreateACell
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running com.wakaleo.gameoflife.domain.WhenYouPlayTheGameOfLife
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+Running com.wakaleo.gameoflife.domain.WhenYouCreateANewUniverse
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 49, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife-core ---
+[INFO] artifact org.easyb:easyb-composite-groovy: checking for updates from cent
+[INFO] artifact org.easyb:easyb-ast: checking for updates from central
+[INFO] Using easyb dependency org.easyb:easyb-core:jar:1.6:compile
+[INFO] Using easyb dependency org.easyb:easyb-composite-groovy:pom:1.2:compile
+[INFO] Using easyb dependency org.codehaus.groovy:groovy-all:jar:2.3.6:compile
+[INFO] Using easyb dependency org.easyb:easyb-ast:jar:1.1:compile
+[INFO] Using easyb dependency commons-cli:commons-cli:jar:1.2:compile
+[INFO] Using easyb dependency commons-lang:commons-lang:jar:2.5:compile
+     [java] Running counting things story (/opt/game-of-life/gameoflife-core/src
+     [java] Scenarios run: 1, Failures: 0, Pending: 0, Time elapsed: 0.429 sec
+     [java] Running multiplying things story (/opt/game-of-life/gameoflife-core/
+     [java] Scenarios run: 1, Failures: 0, Pending: 1, Time elapsed: 0.03 sec
+     [java] 2 total behaviors ran with no failures
+     [java] Writing JUnit report to /opt/game-of-life/gameoflife-core/target/sur
+     [java] JUnit report written to /opt/game-of-life/gameoflife-core/target/sur
+     [java] Writing JUnit report to /opt/game-of-life/gameoflife-core/target/sur
+     [java] JUnit report written to /opt/game-of-life/gameoflife-core/target/sur
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ gameoflife-core ---
+[INFO] Building jar: /opt/game-of-life/gameoflife-core/target/gameoflife-core-1.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (integration-tests) @ gameoflife-core
+[INFO] Surefire report directory: /opt/game-of-life/gameoflife-core/target/suref
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.wakaleo.gameoflife.integration.WhenYouStoreGamesInADatabase
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (jacoco-site) @ gameofl
+[INFO] Analyzed bundle 'gameoflife-core' with 5 classes
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gameoflife-core
+[INFO] Installing /opt/game-of-life/gameoflife-core/target/gameoflife-core-1.0-Sgameoflife-core-1.0-SNAPSHOT.jar
+[INFO] Installing /opt/game-of-life/gameoflife-core/pom.xml to /root/.m2/reposit
+[INFO]
+[INFO] ---------------< com.wakaleo.gameoflife:gameoflife-web >----------------
+[INFO] Building gameoflife-web 1.0-SNAPSHOT                               [4/4]
+[INFO] --------------------------------[ war ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/
+Downloaded from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/mB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/
+Downloaded from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/mB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/aopalliance/aopal
+Downloaded from central: https://repo.maven.apache.org/maven2/aopalliance/aopall
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewors)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframeworat 19 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/jst
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/jstl
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/ser
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/serv
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mocki
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockit
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/f
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fe
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/f
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fe
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/f
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fe
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-s
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-si
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/aopalliance/aopal
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframeworat 213 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/jst
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewors)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/ser
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mocki
+Downloaded from central: https://repo.maven.apache.org/maven2/aopalliance/aopall
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/f
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/f
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/jstl
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-s
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/serv
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fe
+Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fe
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-si
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockit
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ gameoflife-web ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-versions) @ gameoflife-web
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gameoflife
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:prepare-agent (jacoco-initiali
+[INFO] argLine set to -javaagent:/root/.m2/repository/org/jacoco/org.jacoco.agenof-life/gameoflife-web/target/jacoco.exec
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gameoflife-web
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /opt/game-of-life/gameoflife-web/target/class
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ ga
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /opt/game-of-life/gameoflife-web/src/
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gameofl
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /opt/game-of-life/gameoflife-web/target/test-
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ gameoflife-web ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (unit-tests) @ gameoflife-web ---
+[INFO] Surefire report directory: /opt/game-of-life/gameoflife-web/target/surefi
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.wakaleo.gameoflife.webtests.controllers.WhenDisplayingTheHomePage
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
+Running com.wakaleo.gameoflife.webtests.controllers.WhenSpawningANewGeneration
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 sec
+Running com.wakaleo.gameoflife.webtests.controllers.WhenCreatingANewGame
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.138 sec
+
+Results :
+
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- maven-easyb-plugin:1.4:test (default) @ gameoflife-web ---
+[INFO] /opt/game-of-life/gameoflife-web/src/test/stories does not exists.  Skipp
+[INFO]
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ gameoflife-web ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+[INFO] Packaging webapp
+[INFO] Assembling webapp [gameoflife-web] in [/opt/game-of-life/gameoflife-web/t
+[INFO] Processing war project
+[INFO] Copying webapp resources [/opt/game-of-life/gameoflife-web/src/main/webap
+[INFO] Webapp assembled in [38 msecs]
+[INFO] Building war: /opt/game-of-life/gameoflife-web/target/gameoflife.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO]
+[INFO] --- maven-surefire-plugin:2.11:test (integration-tests) @ gameoflife-web
+[INFO] Surefire report directory: /opt/game-of-life/gameoflife-web/target/surefi
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.7.2.201409121644:report (jacoco-site) @ gameofl
+[INFO] Analyzed bundle 'gameoflife-web' with 2 classes
+[INFO]
+[INFO] --- serenity-maven-plugin:1.8.4:aggregate (serenity-reports) @ gameoflife
+Downloading from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/
+Downloaded from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/s
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/g
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/g
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorp
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprs)
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorp
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorpr
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/code
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/codeh
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/google
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/google/
+Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/java
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/inject/javax
+Downloading from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.5
+Downloaded from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.5/
+Downloading from central: https://repo.maven.apache.org/maven2/cglib/cglib-paren
+Downloaded from central: https://repo.maven.apache.org/maven2/cglib/cglib-parent
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-p
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-pa
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/com
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/comm
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/
+Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/obj
+Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/obje
+Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/obj
+Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/obje
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-ap
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-p
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-pa
+Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis
+Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/cucum
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/cucumb
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/cucum
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/cucumb
+Downloading from central: https://repo.maven.apache.org/maven2/info/cukes/cucumb
+Downloaded from central: https://repo.maven.apache.org/maven2/info/cukes/cucumbe
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/cucum
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/cucumb
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/gherk
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/gherki
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/tag-e
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/tag-ex
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mocki
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockit
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byt
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byt
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte
+Downloading from central: https://repo.maven.apache.org/maven2/io/vavr/vavr/0.9.
+Downloaded from central: https://repo.maven.apache.org/maven2/io/vavr/vavr/0.9.0
+Downloading from central: https://repo.maven.apache.org/maven2/io/vavr/vavr-pare
+Downloaded from central: https://repo.maven.apache.org/maven2/io/vavr/vavr-paren
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/o
+Downloading from central: https://repo.maven.apache.org/maven2/io/vavr/vavr-matc
+Downloaded from central: https://repo.maven.apache.org/maven2/io/vavr/vavr-match
+Downloading from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/
+Downloaded from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/s
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/g
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gs
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/g
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gs
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/common
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/
+Downloading from central: https://repo.maven.apache.org/maven2/com/opera/operadr
+Downloaded from central: https://repo.maven.apache.org/maven2/com/opera/operadri
+Downloading from central: https://repo.maven.apache.org/maven2/com/opera/operala
+Downloaded from central: https://repo.maven.apache.org/maven2/com/opera/operalau
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/protob
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/protobu
+Downloading from central: https://repo.maven.apache.org/maven2/commons-jxpath/co
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-jxpath/com
+Downloading from central: https://repo.maven.apache.org/maven2/org/ini4j/ini4j/0
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ini4j/ini4j/0.
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel)
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/com/beust/jcomman
+Downloaded from central: https://repo.maven.apache.org/maven2/com/beust/jcommand
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/o
+Downloading from central: https://repo.maven.apache.org/maven2/org/w3c/css/sac/1
+Downloaded from central: https://repo.maven.apache.org/maven2/org/w3c/css/sac/1.
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/c
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/cs
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/h
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/ht
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/h
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/ht
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl
+Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-ann
+Downloaded from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-anno
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/jav
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/java
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-pa
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-par
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/j
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/dev/jna/j
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/ kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/at 7.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/at 22 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/at 11 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/xalan/serializer/
+Downloaded from central: https://repo.maven.apache.org/maven2/xalan/serializer/2
+Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis
+Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/
+Downloading from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.7.2
+Downloaded from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.7.2/
+Downloading from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyam
+Downloaded from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/g
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gs
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/g
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gs
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/com
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/comm
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/com/codeborne/pha
+Downloaded from central: https://repo.maven.apache.org/maven2/com/codeborne/phan
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/io/appium/java-cl
+Downloaded from central: https://repo.maven.apache.org/maven2/io/appium/java-cli
+Downloading from central: https://repo.maven.apache.org/maven2/commons-validator
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-validator/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/commons-digester/
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-digester/c
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor
+Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/
+Downloading from central: https://repo.maven.apache.org/maven2/io/netty/netty-bo
+Downloaded from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewors)
+Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspec
+Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspect
+Downloading from central: https://repo.maven.apache.org/maven2/org/openpnp/openc
+Downloaded from central: https://repo.maven.apache.org/maven2/org/openpnp/opencv
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/net/sf/opencsv/op
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sf/opencsv/ope
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/
+Downloading from central: https://repo.maven.apache.org/maven2/joda-time/joda-ti
+Downloaded from central: https://repo.maven.apache.org/maven2/joda-time/joda-tim
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/x
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/x
+Downloading from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1
+Downloaded from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/freemarker/fr
+Downloaded from central: https://repo.maven.apache.org/maven2/org/freemarker/fre
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/j
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/je
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamc
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcr
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/h
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/ht
+Downloading from central: https://repo.maven.apache.org/maven2/org/fluentlenium/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/fluentlenium/f
+Downloading from central: https://repo.maven.apache.org/maven2/org/fluentlenium/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/fluentlenium/f
+Downloading from central: https://repo.maven.apache.org/maven2/com/jhlabs/filter
+Downloaded from central: https://repo.maven.apache.org/maven2/com/jhlabs/filters
+Downloading from central: https://repo.maven.apache.org/maven2/org/asciidoctor/a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/asciidoctor/as/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jruby/jruby-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jruby/jruby-co
+Downloading from central: https://repo.maven.apache.org/maven2/org/jruby/shared/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jruby/shared/1
+Downloading from central: https://repo.maven.apache.org/maven2/org/imgscalr/imgs
+Downloaded from central: https://repo.maven.apache.org/maven2/org/imgscalr/imgsc
+Downloading from central: https://repo.maven.apache.org/maven2/javax/validation/
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/validation/v
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hib
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibe
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hib
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibe110 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/arquill
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/arquilli
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkw
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwr
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrm (3.3 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkw0-alpha-3.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwr-alpha-3.pom (4.4 kB at 19 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/logging
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/logging/
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-p
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-pa
+Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/cla
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/clas
+Downloading from central: https://repo.maven.apache.org/maven2/javax/el/javax.el
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/el/javax.el-
+Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-pa
+Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-par
+Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/web
+Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/web/
+Downloading from central: https://repo.maven.apache.org/maven2/org/awaitility/aw
+Downloaded from central: https://repo.maven.apache.org/maven2/org/awaitility/awa
+Downloading from central: https://repo.maven.apache.org/maven2/org/awaitility/aw
+Downloaded from central: https://repo.maven.apache.org/maven2/org/awaitility/awa
+Downloading from central: https://repo.maven.apache.org/maven2/com/typesafe/conf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/typesafe/confi
+Downloading from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/jimfs/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/jimfs/j
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/jimfs/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/jimfs/j
+Downloading from central: https://repo.maven.apache.org/maven2/es/nitaur/markdow
+Downloaded from central: https://repo.maven.apache.org/maven2/es/nitaur/markdown
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmakB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/org/nibor/autolin
+Downloaded from central: https://repo.maven.apache.org/maven2/org/nibor/autolink
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmakB at 5.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmakB at 5.7 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmakB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma1.5 kB at 6.4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmakB at 5.7 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmakB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox/
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox/
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/.5 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/ibm/icu/icu4j
+Downloaded from central: https://repo.maven.apache.org/maven2/com/ibm/icu/icu4j/
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/pom (1.6 kB at 6.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmas)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma7.1 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu3 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/o
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/s
+Downloading from central: https://repo.maven.apache.org/maven2/javax/enterprise/
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/enterprise/c
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/we
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/wel
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/we
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/wel
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/we
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/wel
+Downloading from central: https://repo.maven.apache.org/maven2/javax/annotation/
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/annotation/j
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/o
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/p
+Downloading from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorp
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/
+Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/java
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorpr
+Downloading from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.5
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/inject/javax
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/ant/an
+Downloaded from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.5/
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/com
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/obj
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/5.
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/obje
+Downloading from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/comm
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/cucum
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-ap
+Downloading from central: https://repo.maven.apache.org/maven2/info/cukes/cucumb
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/ant/ant
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/cucum
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/g
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/gherk
+Downloaded from central: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/
+Downloading from central: https://repo.maven.apache.org/maven2/io/cucumber/tag-e
+Downloaded from central: https://repo.maven.apache.org/maven2/info/cukes/cucumbe
+Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/c
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/cucumb
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mocki
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/cucumb
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byt
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/gherki
+Downloading from central: https://repo.maven.apache.org/maven2/io/vavr/vavr/0.9.
+Downloaded from central: https://repo.maven.apache.org/maven2/io/cucumber/tag-ex
+Downloading from central: https://repo.maven.apache.org/maven2/io/vavr/vavr-matc
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/co
+Downloading from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/
+Downloaded from central: https://repo.maven.apache.org/maven2/io/vavr/vavr-match
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/g
+Downloaded from central: https://repo.maven.apache.org/maven2/io/vavr/vavr/0.9.0
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockit
+Downloading from central: https://repo.maven.apache.org/maven2/com/opera/operadr
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte
+Downloading from central: https://repo.maven.apache.org/maven2/com/opera/operala
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gs
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/protob
+Downloaded from central: https://repo.maven.apache.org/maven2/net/serenity-bdd/s
+Downloading from central: https://repo.maven.apache.org/maven2/commons-jxpath/co
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/ini4j/ini4j/0
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/protobu
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-jxpath/com
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ini4j/ini4j/0.
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/com/opera/operalau
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/com/beust/jcomman
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sels)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/w3c/css/sac/1
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/c
+Downloaded from central: https://repo.maven.apache.org/maven2/com/opera/operadri
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/h
+Downloaded from central: https://repo.maven.apache.org/maven2/com/beust/jcommand
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/h
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/w3c/css/sac/1.
+Downloading from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-ann
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/cs
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/ht
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-anno
+Downloading from central: https://repo.maven.apache.org/maven2/javax/servlet/jav
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/ht
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/servlet/java
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyam
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/t 9.2 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/at 57 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/com/codeborne/pha
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/se
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/io/appium/java-cl
+Downloaded from central: https://repo.maven.apache.org/maven2/com/codeborne/phan
+Downloading from central: https://repo.maven.apache.org/maven2/commons-validator
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/
+Downloading from central: https://repo.maven.apache.org/maven2/commons-digester/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/sel
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/io/appium/java-cli
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-validator/
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-digester/c
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframewo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspec
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/openpnp/openc
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/groo
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor)
+Downloading from central: https://repo.maven.apache.org/maven2/net/sf/opencsv/op
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframewor
+Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils
+Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspect
+Downloading from central: https://repo.maven.apache.org/maven2/joda-time/joda-ti
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sf/opencsv/ope
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/
+Downloading from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1
+Downloaded from central: https://repo.maven.apache.org/maven2/joda-time/joda-tim
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/common
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/x
+Downloading from central: https://repo.maven.apache.org/maven2/commons-collectio
+Downloaded from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.
+Downloading from central: https://repo.maven.apache.org/maven2/org/freemarker/fr
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-collection
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/j
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamc
+Downloaded from central: https://repo.maven.apache.org/maven2/org/freemarker/fre
+Downloading from central: https://repo.maven.apache.org/maven2/net/sourceforge/h
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcr
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/je
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpco
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/groov
+Downloading from central: https://repo.maven.apache.org/maven2/org/fluentlenium/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/com/jhlabs/filter
+Downloaded from central: https://repo.maven.apache.org/maven2/net/sourceforge/ht
+Downloading from central: https://repo.maven.apache.org/maven2/org/asciidoctor/a
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcom
+Downloading from central: https://repo.maven.apache.org/maven2/org/jruby/jruby-c
+Downloaded from central: https://repo.maven.apache.org/maven2/org/fluentlenium/f
+Downloading from central: https://repo.maven.apache.org/maven2/org/imgscalr/imgs
+Downloaded from central: https://repo.maven.apache.org/maven2/com/jhlabs/filters
+Downloading from central: https://repo.maven.apache.org/maven2/javax/validation/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/imgscalr/imgsc
+Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hib
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/validation/v
+Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/logging
+Downloaded from central: https://repo.maven.apache.org/maven2/org/asciidoctor/asB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/cla
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/logging/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibe
+Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/web
+Downloading from central: https://repo.maven.apache.org/maven2/javax/el/javax.el
+Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/clas
+Downloading from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.7.2
+Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/web/
+Downloading from central: https://repo.maven.apache.org/maven2/xalan/serializer/
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/el/javax.el-
+Downloading from central: https://repo.maven.apache.org/maven2/org/awaitility/aw
+Downloaded from central: https://repo.maven.apache.org/maven2/xalan/serializer/2
+Downloading from central: https://repo.maven.apache.org/maven2/com/typesafe/conf
+Downloaded from central: https://repo.maven.apache.org/maven2/org/awaitility/awa
+Downloading from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1
+Downloaded from central: https://repo.maven.apache.org/maven2/com/typesafe/confi
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/jimfs/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.
+Downloaded from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.7.2/
+Downloading from central: https://repo.maven.apache.org/maven2/es/nitaur/markdow
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/google/jimfs/j
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/es/nitaur/markdown
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmaB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/org/nibor/autolin
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jruby/jruby-co
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/org/nibor/autolink
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmaB at 1.5 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmaB at 3.2 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmaB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma18 kB at 2.0 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmaB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmas)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmas)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmaB at 1.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/
+Downloading from central: https://repo.maven.apache.org/maven2/com/ibm/icu/icu4j
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/4 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox/
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/pdfbox/
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/openhtmltopdf/jar (20 kB at 1.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/vladsch/flexm
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexmas)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/vladsch/flexma.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/openpnp/opencv
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/javax/enterprise/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloading from central: https://repo.maven.apache.org/maven2/javax/annotation/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/s
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/
+Downloaded from central: https://repo.maven.apache.org/maven2/com/ibm/icu/icu4j/
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/o
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/enterprise/c
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/annotation/j
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/o
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plex
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu63 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexu
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexu
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/m
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/r
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/d
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/pkB/s)
+[INFO] current_project.base.dir: /opt/game-of-life/gameoflife-web
+[INFO] Generating test results for 0 tests
+[INFO] 0 requirements loaded after 61 ms
+[INFO] 0 related requirements found after 61 ms
+[INFO] Generating test outcome reports: false
+[INFO] Starting generating reports: 77 ms
+[INFO] Configured report threads: 10
+[INFO] Test results for 0 tests generated in 613 ms
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ gameoflife-web -
+[INFO] Installing /opt/game-of-life/gameoflife-web/target/gameoflife.war to /rooNAPSHOT.war
+[INFO] Installing /opt/game-of-life/gameoflife-web/pom.xml to /root/.m2/reposito
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] gameoflife 1.0-SNAPSHOT ............................ SUCCESS [ 45.974 s]
+[INFO] gameoflife-build ................................... SUCCESS [  2.448 s]
+[INFO] gameoflife-core .................................... SUCCESS [  5.704 s]
+[INFO] gameoflife-web 1.0-SNAPSHOT ........................ SUCCESS [01:24 min]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:25 min
+[INFO] Finished at: 2021-07-08T02:18:23Z
+[INFO] ------------------------------------------------------------------------
+[root@ip-172-31-13-193 game-of-life]# ls
+gameoflife-acceptance-tests  gameoflife-build  gameoflife-core  gameoflife-deplo
+[root@ip-172-31-13-193 game-of-life]# cd target/
+[root@ip-172-31-13-193 target]# ls
+easyb  jacoco.exec  surefire
+[root@ip-172-31-13-193 target]# cd ..
+[root@ip-172-31-13-193 game-of-life]# ls
+gameoflife-acceptance-tests  gameoflife-build  gameoflife-core  gameoflife-deplo
+[root@ip-172-31-13-193 game-of-life]# cd gameoflife-web
+[root@ip-172-31-13-193 gameoflife-web]# ls
+build.xml  Dockerfile  dostuff.groovy  infinitest.filters  pom.xml  src  target
+[root@ip-172-31-13-193 gameoflife-web]# cp -R target/* /opt/apache-tomcat-8.5.3/
+[root@ip-172-31-13-193 gameoflife-web]# cd /opt
+[root@ip-172-31-13-193 opt]# cd apache-tomcat-8.5.3
+[root@ip-172-31-13-193 apache-tomcat-8.5.3]# cd bin
+[root@ip-172-31-13-193 bin]# ls
+bootstrap.jar                 daemon.sh         startup.sh
+catalina.bat                  digest.bat        tomcat-juli.jar
+catalina.sh                   digest.sh         tomcat-native.tar.gz
+catalina-tasks.xml            setclasspath.bat  tool-wrapper.bat
+commons-daemon.jar            setclasspath.sh   tool-wrapper.sh
+commons-daemon-native.tar.gz  shutdown.bat      version.bat
+configtest.bat                shutdown.sh       version.sh
+configtest.sh                 startup.bat
+[root@ip-172-31-13-193 bin]# sh startup.sh
+Using CATALINA_BASE:   /opt/apache-tomcat-8.5.3
+Using CATALINA_HOME:   /opt/apache-tomcat-8.5.3
+Using CATALINA_TMPDIR: /opt/apache-tomcat-8.5.3/temp
+Using JRE_HOME:        /opt/jdk1.8.0_291/jre
+Using CLASSPATH:       /opt/apache-tomcat-8.5.3/bin/bootstrap.jar:/opt/apache-tomcat-8.5.3/bin/tomcat-juli.jar
+Tomcat started.
+[root@ip-172-31-13-193 bin]# cd ..
+[root@ip-172-31-13-193 apache-tomcat-8.5.3]# ls
+bin  conf  lib  LICENSE  logs  NOTICE  RELEASE-NOTES  RUNNING.txt  temp  webapps
+[root@ip-172-31-13-193 apache-tomcat-8.5.3]# cd webapps/
+[root@ip-172-31-13-193 webapps]# wget https://get.jenkins.io/war-stable/2.289.2/
+--2021-07-08 02:27:17--  https://get.jenkins.io/war-stable/2.289.2/jenkins.war
+Resolving get.jenkins.io (get.jenkins.io)... 52.167.253.43
+Connecting to get.jenkins.io (get.jenkins.io)|52.167.253.43|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/2.289.2/jenkin
+--2021-07-08 02:27:18--  https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable
+Resolving mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)... 101.6.8
+Connecting to mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)|101.6.
+HTTP request sent, awaiting response... 200 OK
+Length: 74258848 (71M) [application/java-archive]
+Saving to: ‘jenkins.war’
+
+jenkins.war                               100%[=================================
+
+2021-07-08 02:27:51 (2.26 MB/s) - ‘jenkins.war’ saved [74258848/74258848]
+
+[root@ip-172-31-13-193 webapps]# cat /root/.jenkins/secrets/initialAdminPassword
+ecd6aa1ecfc143b78fabb2e7d8ac7e22
+[root@ip-172-31-13-193 webapps]# cd /opt
+[root@ip-172-31-13-193 opt]# ls -la
+total 159192l
+drwxr-xr-x.  8 root     root           247 Jul  8 02:14 .
+dr-xr-xr-x. 18 root     root           236 May  4 17:30 ..
+drwxr-xr-x.  6 root     root           115 Jul  3 15:02 apache-maven-3.5.3
+-rw-r--r--.  1 root     root       8799579 Feb 24  2018 apache-maven-3.5.3-bin.t
+drwxr-xr-x.  9 root     root           160 Jul  3 15:06 apache-tomcat-8.5.3
+-rw-r--r--.  1 root     root       9272944 Jun  9  2016 apache-tomcat-8.5.3.tar.
+drwxr-xr-x.  9 root     root           243 Jul  8 02:16 game-of-life
+drwxr-xr-x.  4 root     root            68 Jul  7 02:08 github-maven-example
+drwxr-xr-x.  5 root     root           181 Jul  7 07:39 javawar
+drwxr-xr-x.  8    10143    10143       273 Apr  7 19:26 jdk1.8.0_291
+-rw-rw-r--.  1 ec2-user ec2-user 144935989 Jun 30 16:55 jdk-8u291-linux-x64.tar.
+[root@ip-172-31-13-193 opt]# cd /root
+[root@ip-172-31-13-193 ~]# ls -la
+total 60
+dr-xr-x---.  7 root root   239 Jul  8 02:37 .
+dr-xr-xr-x. 18 root root   236 May  4 17:30 ..
+-rw-------.  1 root root  7194 May  4 17:36 anaconda-ks.cfg
+-rw-r--r--.  1 root root    18 Aug 12  2018 .bash_logout
+-rw-r--r--.  1 root root   176 Aug 12  2018 .bash_profile
+-rw-r--r--.  1 root root   230 Jul  7 02:17 .bashrc
+drwxr-x---.  3 root root    17 Jul  8 02:37 .cache
+-rw-r--r--.  1 root root   100 Aug 12  2018 .cshrc
+drwxr-x---.  3 root root    20 Jul  8 02:36 .groovy
+drwxr-x---. 11 root root  4096 Jul  8 02:37 .jenkins
+drwxr-xr-x.  3 root root    24 Jul  7 02:54 .m2
+-rw-------.  1 root root  6940 May  4 17:36 original-ks.cfg
+drwx------.  2 root root    29 Jul  3 14:11 .ssh
+-rw-r--r--.  1 root root   129 Aug 12  2018 .tcshrc
+-rw-------.  1 root root 13615 Jul  7 03:24 .viminfo
+-rw-r--r--.  1 root root   222 Jul  8 02:27 .wget-hsts
+[root@ip-172-31-13-193 ~]# cd /opt
+[root@ip-172-31-13-193 opt]# cd apache-maven-3.5.3
+[root@ip-172-31-13-193 apache-maven-3.5.3]# ls
+bin  boot  conf  lib  LICENSE  maven.sh  NOTICE  README.txt
+[root@ip-172-31-13-193 apache-maven-3.5.3]# cd /opt
+[root@ip-172-31-13-193 opt]#
